@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo hover Visited focus</title>
+    <style>
+        /* hover applied on heading */
+        h3 {
+            color: blue;
+        }
+
+        h3:hover {
+            /* to change font color when mouse on heading */
+            color: coral;
+            /* to change background color when mouse on heading */
+            background-color: aqua;
+        }
+
+        a:visited {
+            color: blue;
+            /* when visit anchor link then visited link taking this color */
+        }
+
+        li:focus {
+            color: coral;
+        }
+
+        input:focus {
+            color: blue;
+            /* to change font color when mouse on focused input field */
+            padding-left: 25px;
+            /* to change padding-left: 25px when mouse on focused input field */
+            outline: 0;
+            /* there is no  outline of form when mouse on focused input field  */
+            border: 2px solid purple;
+            /* there is border: 2px solid purple change when mouse on focused input field */
+            border-radius: 5px;
+            /* to change border-radius: 5px when mouse on focused input field */
+        }
+        /* nth child list applied on list */
+        li:last-child{
+            /* color: blue; */
+            /* to change font color  color: blue on li:last-child */
+        }
+        li:first-child{
+            /* color: aqua; */
+        }
+        li:nth-child(2n+1){
+            color: crimson; 
+            /* to change font color on li:even child */
+            /* use (2n+1) for change font color on li:odd child */
+            /* use (2n+2), (2n+1) , (n+2)for change font color on li:odd  even child */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- hover applied on heading -->
+    <h3>My pseudo class on hover visited focus</h3>
+
+    <!-- visited applied on anchor -->
+    <a href="https://fonts.google.com/?query=Merriweather">Fonts</a>
+    <a
+        href="https://r.search.yahoo.com/_ylt=Awrg1NCnT51lfx0MKgxXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1704837160/RO=10/RU=https%3a%2f%2ffonts.google.com%2fspecimen%2fMerriweather/RK=2/RS=faxvB50Nv3.P2TDbC6LdOxqKEmU-">merriweather
+        font</a>
+    <a
+        href="https://r.search.yahoo.com/_ylt=Awrg1NCnT51lfx0MOQxXNyoA;_ylu=Y29sbwNncTEEcG9zAzYEdnRpZAMEc2VjA3Ny/RV=2/RE=1704837160/RO=10/RU=https%3a%2f%2ffontmeme.com%2ffonts%2fmerriweather-font%2f/RK=2/RS=j12.Q5GLS3NzOHN90YzlzH8Igug-">merriweather
+        Download</a>
+
+    <form action="">
+        <input placeholder="" type="text">
+        <input placeholder="" type="text">
+        <input placeholder="" type="text">
+    </form>
+
+    <!-- nth child list applied on list -->
+    <ul>
+        <li>Merriweather-HeavyItalic.ttf</li>
+        <li>Merriweather-Black.ttf</li>
+        <li>OFL.txt</li>
+        <li>Alphabetically</li>
+        <li>Organized </li>
+        <li>Fonts: </li>
+    </ul>
+
+</body>
+
+</html>
